@@ -1,0 +1,5 @@
+profile: service
+defaultPackage: micronaut.graphql
+---
+testFramework: junit
+sourceLanguage: java

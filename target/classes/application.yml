@@ -1,0 +1,9 @@
+micronaut: 
+  application: 
+    name: micronaut-graphql
+  server: 
+    port: 3000
+    
+graphql: 
+  enabled: true
+  path: /graphql

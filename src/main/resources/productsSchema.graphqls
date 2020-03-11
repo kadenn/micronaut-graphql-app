@@ -1,0 +1,35 @@
+schema {
+    query: Query
+}
+
+type Query {
+    products(productId : ID): [Product]
+}
+
+type Product {
+    productId: ID!
+    title: String
+    description: String
+    category: String
+    colors: String
+    images: [Image]
+    sizes: [Size]
+    price: [Price]
+}
+
+type Size {
+    sizeName: String
+    onSale: Boolean
+    inStock: Boolean
+}
+
+type Image {
+    uri: String
+}
+
+type Price {
+    sizeName: String
+    currentPrice: Float
+    discountedPrice: Float
+}
+
